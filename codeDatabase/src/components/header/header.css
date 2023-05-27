@@ -1,3 +1,79 @@
-header {
-  color: white;
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 100px;
+  color: #fff;
+  background: #151320;
+  font: 700 1rem "Montserrat";
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  z-index: 100;
+}
+.box h1 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 600px;
+  height: 100px;
+  color: #fff;
+  background: #151320;
+  font: 700 2rem "Montserrat";
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  z-index: 100;
+}
+
+.box::before,
+.box::after {
+  content: "";
+  border-radius: 8px;
+  z-index: -1;
+  position: absolute;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  top: -5px;
+  left: -5px;
+  background: linear-gradient(
+    45deg,
+    #006bf2,
+    #00b2fc,
+    #0cdfe6,
+    #00fcbe,
+    #00f272,
+    #00f272,
+    #00fcbe,
+    #006bf2,
+    #00b2fc,
+    #0cdfe6
+  );
+  background-size: 300px;
+  animation: border 12s linear infinite;
+}
+
+.box::after {
+  filter: blur(20px);
+}
+
+@keyframes border {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 200%;
+  }
 }

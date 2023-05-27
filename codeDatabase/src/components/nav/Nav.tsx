@@ -1,20 +1,21 @@
 import "./nav.css";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <nav>
       <ul>
         <li>
-          <a>JS methods</a>
+          <Link to="/jsmethods">JS methods</Link>
         </li>
         <li>
-          <a>Css tricks</a>
+          <Link to="/csstricks">Css tricks</Link>
         </li>
         <li>
-          <a>Github</a>
+          <Link to="/github">Github</Link>
         </li>
         <li>
-          <a>Resources</a>
+          <Link to="/resources">Resources</Link>
         </li>
       </ul>
     </nav>
