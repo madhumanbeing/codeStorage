@@ -32,7 +32,14 @@ export default function JsMethods() {
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               findIndex( )
             </Typography>
           </AccordionSummary>
@@ -67,7 +74,14 @@ console.log(indexFinder); // returns 1`}
             aria-controls="panel2bh-content"
             id="panel2bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               indexOf( )
             </Typography>
           </AccordionSummary>
@@ -102,7 +116,14 @@ console.log(indexFinder);  returns 1`}
             aria-controls="panel3bh-content"
             id="panel3bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               map( )
             </Typography>
           </AccordionSummary>
@@ -137,7 +158,14 @@ console.log(mapped);  returns [31,32,33,34,35,36]`}
             aria-controls="panel4bh-content"
             id="panel4bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               filter( )
             </Typography>
           </AccordionSummary>
@@ -172,7 +200,14 @@ console.log(filtered);  returns [2,4]`}
             aria-controls="panel5bh-content"
             id="panel5bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               sort( )
             </Typography>
           </AccordionSummary>
@@ -213,7 +248,14 @@ console.log(descend) returns [1, 2, 3, 4, 5, 6]
             aria-controls="panel6bh-content"
             id="panel6bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               every( )
             </Typography>
           </AccordionSummary>
@@ -253,7 +295,14 @@ console.log(lessnine) returns true;
             aria-controls="panel7bh-content"
             id="panel7bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               some( )
             </Typography>
           </AccordionSummary>
@@ -293,7 +342,14 @@ console.log(lessNum) returns false;
             aria-controls="panel8bh-content"
             id="panel8bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               includes( )
             </Typography>
           </AccordionSummary>
@@ -329,7 +385,14 @@ console.log(arr.includes(8)); returns false;
             aria-controls="panel9bh-content"
             id="panel9bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               reduce( )
             </Typography>
           </AccordionSummary>
@@ -365,7 +428,14 @@ console.log(reduced); returns 21;
             aria-controls="panel10bh-content"
             id="panel10bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               find( )
             </Typography>
           </AccordionSummary>
@@ -401,7 +471,14 @@ console.log(found); returns 6;
             aria-controls="panel11bh-content"
             id="panel11bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               fill( )
             </Typography>
           </AccordionSummary>
@@ -437,7 +514,14 @@ console.log(arr.fill(10)); returns [10, 10, 10]
             aria-controls="panel12bh-content"
             id="panel12bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               slice( )
             </Typography>
           </AccordionSummary>
@@ -474,7 +558,14 @@ console.log(arr); returns ["a", "b", "c", "d", "e"]
             aria-controls="panel13bh-content"
             id="panel13bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               reverse( )
             </Typography>
           </AccordionSummary>
@@ -510,7 +601,14 @@ console.log(arr); returns [3, 2, 1]
             aria-controls="panel14bh-content"
             id="panel14bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               push( )
             </Typography>
           </AccordionSummary>
@@ -546,7 +644,14 @@ console.log(fruits); returns ["Apple", "Peach", "Banana"]
             aria-controls="panel15bh-content"
             id="panel15bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               pop( )
             </Typography>
           </AccordionSummary>
@@ -582,7 +687,14 @@ console.log(fruits); returns ["Apple"]
             aria-controls="panel16bh-content"
             id="panel16bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               shift( )
             </Typography>
           </AccordionSummary>
@@ -618,7 +730,14 @@ console.log(fruits); returns ["Peach"]
             aria-controls="panel17bh-content"
             id="panel17bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               unshift( )
             </Typography>
           </AccordionSummary>
@@ -654,7 +773,14 @@ console.log(fruits); returns ["Banana", "Apple", "Peach"]
             aria-controls="panel18bh-content"
             id="panel18bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               forEach( )
             </Typography>
           </AccordionSummary>

@@ -32,7 +32,14 @@ export default function Github() {
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git status
             </Typography>
           </AccordionSummary>
@@ -65,7 +72,14 @@ export default function Github() {
             aria-controls="panel2bh-content"
             id="panel2bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git init
             </Typography>
           </AccordionSummary>
@@ -96,7 +110,14 @@ export default function Github() {
             aria-controls="panel3bh-content"
             id="panel3bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git diff
             </Typography>
           </AccordionSummary>
@@ -125,7 +146,14 @@ export default function Github() {
             aria-controls="panel4bh-content"
             id="panel4bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git log
             </Typography>
           </AccordionSummary>
@@ -167,7 +195,14 @@ export default function Github() {
             aria-controls="panel5bh-content"
             id="panel5bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git commit
             </Typography>
           </AccordionSummary>
@@ -205,7 +240,14 @@ export default function Github() {
             aria-controls="panel6bh-content"
             id="panel6bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git show HEAD
             </Typography>
           </AccordionSummary>
@@ -234,7 +276,14 @@ export default function Github() {
             aria-controls="panel7bh-content"
             id="panel7bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git add
             </Typography>
           </AccordionSummary>
@@ -262,7 +311,14 @@ export default function Github() {
             aria-controls="panel8bh-content"
             id="panel8bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git project workflow
             </Typography>
           </AccordionSummary>
@@ -305,7 +361,14 @@ export default function Github() {
             aria-controls="panel9bh-content"
             id="panel9bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git reset commit SHA
             </Typography>
           </AccordionSummary>
@@ -335,7 +398,14 @@ export default function Github() {
             aria-controls="panel10bh-content"
             id="panel10bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git reset HEAD
             </Typography>
           </AccordionSummary>
@@ -367,7 +437,14 @@ export default function Github() {
             aria-controls="panel11bh-content"
             id="panel11bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git checkout HEAD
             </Typography>
           </AccordionSummary>
@@ -399,7 +476,14 @@ export default function Github() {
             aria-controls="panel12bh-content"
             id="panel12bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git stash
             </Typography>
           </AccordionSummary>
@@ -430,7 +514,14 @@ export default function Github() {
             aria-controls="panel13bh-content"
             id="panel13bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git log options
             </Typography>
           </AccordionSummary>
@@ -462,7 +553,14 @@ export default function Github() {
             aria-controls="panel14bh-content"
             id="panel14bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git commit –amend
             </Typography>
           </AccordionSummary>
@@ -492,7 +590,14 @@ export default function Github() {
             aria-controls="panel15bh-content"
             id="panel15bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               git aliases
             </Typography>
           </AccordionSummary>
@@ -523,7 +628,14 @@ export default function Github() {
             aria-controls="panel16bh-content"
             id="panel16bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               Deleting a Branch
             </Typography>
           </AccordionSummary>
@@ -551,7 +663,14 @@ export default function Github() {
             aria-controls="panel17bh-content"
             id="panel17bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               Pull Requests on GitHub
             </Typography>
           </AccordionSummary>
@@ -586,7 +705,14 @@ export default function Github() {
             aria-controls="panel18bh-content"
             id="panel18bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+            <Typography
+              sx={{
+                width: "33%",
+                flexShrink: 0,
+                color: "#fff",
+                fontSize: "20px",
+              }}
+            >
               A GitHub README File
             </Typography>
           </AccordionSummary>
