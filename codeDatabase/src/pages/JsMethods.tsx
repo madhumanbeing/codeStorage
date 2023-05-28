@@ -475,22 +475,21 @@ console.log(arr); returns ["a", "b", "c", "d", "e"]
             id="panel13bh-header"
           >
             <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
-              slice( )
+              reverse( )
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ color: "#fff" }}>
               <p>
-                This method returns a new array with specified start to end
-                elements.
+                This method reverses an array in place. Element at last index
+                will be first and element at 0 index will be last.
               </p>
               <p>Example:</p>
               <pre>
                 <code>
-                  {`const arr = ["a", "b", "c", "d", "e"];
-const sliced = arr.slice(2,4);
-console.log(sliced); returns ["c", "d"]
-console.log(arr); returns ["a", "b", "c", "d", "e"]
+                  {`const arr = [1, 2, 3];
+arr.reverse();
+console.log(arr); returns [3, 2, 1]
 `}
                 </code>
               </pre>
@@ -503,13 +502,157 @@ console.log(arr); returns ["a", "b", "c", "d", "e"]
             border: "0.5px solid #0C9DC2",
             padding: "0.5rem 0",
           }}
-          expanded={expanded === "panel6"}
-          onChange={handleChange("panel6")}
+          expanded={expanded === "panel14"}
+          onChange={handleChange("panel14")}
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
-            aria-controls="panel6bh-content"
-            id="panel6bh-header"
+            aria-controls="panel14bh-content"
+            id="panel14bh-header"
+          >
+            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+              push( )
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography sx={{ color: "#fff" }}>
+              <p>
+                This method adds one or more elements to the end of array and
+                returns the new length of the array.
+              </p>
+              <p>Example:</p>
+              <pre>
+                <code>
+                  {`const fruits = ["Apple", "Peach"];
+console.log(fruits.push("Banana"));
+console.log(fruits); returns ["Apple", "Peach", "Banana"]
+`}
+                </code>
+              </pre>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          style={{
+            backgroundColor: "#151320",
+            border: "0.5px solid #0C9DC2",
+            padding: "0.5rem 0",
+          }}
+          expanded={expanded === "panel15"}
+          onChange={handleChange("panel15")}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+            aria-controls="panel15bh-content"
+            id="panel15bh-header"
+          >
+            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+              pop( )
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography sx={{ color: "#fff" }}>
+              <p>
+                This method removes the last element from the end of array and
+                returns that element.
+              </p>
+              <p>Example:</p>
+              <pre>
+                <code>
+                  {`const fruits = ["Apple", "Peach"];
+fruits.pop();
+console.log(fruits); returns ["Apple"]
+`}
+                </code>
+              </pre>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          style={{
+            backgroundColor: "#151320",
+            border: "0.5px solid #0C9DC2",
+            padding: "0.5rem 0",
+          }}
+          expanded={expanded === "panel16"}
+          onChange={handleChange("panel16")}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+            aria-controls="panel16bh-content"
+            id="panel16bh-header"
+          >
+            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+              shift( )
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography sx={{ color: "#fff" }}>
+              <p>
+                This method removes the first element from an array and returns
+                that element.
+              </p>
+              <p>Example:</p>
+              <pre>
+                <code>
+                  {`const fruits = ["Apple", "Peach"];
+fruits.shift();
+console.log(fruits); returns ["Peach"]
+`}
+                </code>
+              </pre>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          style={{
+            backgroundColor: "#151320",
+            border: "0.5px solid #0C9DC2",
+            padding: "0.5rem 0",
+          }}
+          expanded={expanded === "panel17"}
+          onChange={handleChange("panel17")}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+            aria-controls="panel17bh-content"
+            id="panel17bh-header"
+          >
+            <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
+              unshift( )
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography sx={{ color: "#fff" }}>
+              <p>
+                This method adds one or more elements to the beginning of an
+                array and returns the new length of the array.
+              </p>
+              <p>Example:</p>
+              <pre>
+                <code>
+                  {`const fruits = ["Apple", "Peach"];
+console.log(unshift("Banana")); returns 3
+console.log(fruits); returns ["Banana", "Apple", "Peach"]
+`}
+                </code>
+              </pre>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          style={{
+            backgroundColor: "#151320",
+            border: "0.5px solid #0C9DC2",
+            padding: "0.5rem 0",
+          }}
+          expanded={expanded === "panel18"}
+          onChange={handleChange("panel18")}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+            aria-controls="panel18bh-content"
+            id="panel18bh-header"
           >
             <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
               forEach( )
