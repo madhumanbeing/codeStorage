@@ -368,24 +368,20 @@ export default function Github() {
             id="panel11bh-header"
           >
             <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
-              fill( )
+              git checkout HEAD
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ color: "#fff" }}>
               <p>
-                This method fills the elements in an array with a static value
-                and returns the modified array.
+                In Git, the git checkout HEAD filename command rolls back all
+                changes that have been made to filename since the last commit.
+                In other words, this command will change your working directory
+                to look exactly as it did when you last made a commit. You can
+                use the git diff command to see if the rollback was successful.
+                If git diff doesn’t output anything, this means your working
+                directory matches your last commit.
               </p>
-              <p>Example:</p>
-              <pre>
-                <code>
-                  {`const arr = new Array(3);
-console.log(arr); returns [empty, empty, empty]
-console.log(arr.fill(10)); returns [10, 10, 10]
-`}
-                </code>
-              </pre>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -404,25 +400,19 @@ console.log(arr.fill(10)); returns [10, 10, 10]
             id="panel12bh-header"
           >
             <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
-              slice( )
+              git stash
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ color: "#fff" }}>
               <p>
-                This method returns a new array with specified start to end
-                elements.
+                git stash allows you to get back to a clean commit point with a
+                synchronized working tree, and avoid losing your local changes
+                in the process of switching branches or tasks. You’re “stashing”
+                your local work temporarily in order to update a previous commit
+                and later on retrieve your work. You can use git stash pop to
+                retrieve from your stash.
               </p>
-              <p>Example:</p>
-              <pre>
-                <code>
-                  {`const arr = ["a", "b", "c", "d", "e"];
-const sliced = arr.slice(2,4);
-console.log(sliced); returns ["c", "d"]
-console.log(arr); returns ["a", "b", "c", "d", "e"]
-`}
-                </code>
-              </pre>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -441,24 +431,20 @@ console.log(arr); returns ["a", "b", "c", "d", "e"]
             id="panel13bh-header"
           >
             <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
-              reverse( )
+              git log options
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ color: "#fff" }}>
               <p>
-                This method reverses an array in place. Element at last index
-                will be first and element at 0 index will be last.
+                git log allows you to view the commit history of the branch you
+                currently have checked out. git log --oneline show the list of
+                commits in one line format. `git log -S “keyword” displays a
+                list of commits that contain the keyword in the message. git log
+                --oneline --graph displays a visual representation of how the
+                branches and commits were created in order to help you make
+                sense of your repository history.
               </p>
-              <p>Example:</p>
-              <pre>
-                <code>
-                  {`const arr = [1, 2, 3];
-arr.reverse();
-console.log(arr); returns [3, 2, 1]
-`}
-                </code>
-              </pre>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -477,24 +463,18 @@ console.log(arr); returns [3, 2, 1]
             id="panel14bh-header"
           >
             <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
-              push( )
+              git commit –amend
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ color: "#fff" }}>
               <p>
-                This method adds one or more elements to the end of array and
-                returns the new length of the array.
+                git commit --amend flag allows you to update a commit. To avoid
+                creating a new one, you could create your changes, stage them
+                with git add and then type the command git commit --amend to
+                update your previous commit. The terminal editor will ask you to
+                update your commit message.
               </p>
-              <p>Example:</p>
-              <pre>
-                <code>
-                  {`const fruits = ["Apple", "Peach"];
-console.log(fruits.push("Banana"));
-console.log(fruits); returns ["Apple", "Peach", "Banana"]
-`}
-                </code>
-              </pre>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -513,24 +493,19 @@ console.log(fruits); returns ["Apple", "Peach", "Banana"]
             id="panel15bh-header"
           >
             <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
-              pop( )
+              git aliases
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ color: "#fff" }}>
               <p>
-                This method removes the last element from the end of array and
-                returns that element.
+                If you have a set of commands that you use regularly and want to
+                save some time from typing them, you can easily set up an alias
+                for each command using Git config. The following terminal
+                command git config --global alias.glop "log --pretty=format:"%h
+                %s" --graph" allows you to reduce the entire command to: git
+                glop
               </p>
-              <p>Example:</p>
-              <pre>
-                <code>
-                  {`const fruits = ["Apple", "Peach"];
-fruits.pop();
-console.log(fruits); returns ["Apple"]
-`}
-                </code>
-              </pre>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -549,24 +524,16 @@ console.log(fruits); returns ["Apple"]
             id="panel16bh-header"
           >
             <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
-              shift( )
+              Deleting a Branch
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ color: "#fff" }}>
               <p>
-                This method removes the first element from an array and returns
-                that element.
+                In Git, the git branch -d branch_name command is used to delete
+                the branch_name branch. It’s good practice to delete a branch
+                after it has been merged into the master branch.
               </p>
-              <p>Example:</p>
-              <pre>
-                <code>
-                  {`const fruits = ["Apple", "Peach"];
-fruits.shift();
-console.log(fruits); returns ["Peach"]
-`}
-                </code>
-              </pre>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -585,24 +552,23 @@ console.log(fruits); returns ["Peach"]
             id="panel17bh-header"
           >
             <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
-              unshift( )
+              Pull Requests on GitHub
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ color: "#fff" }}>
               <p>
-                This method adds one or more elements to the beginning of an
-                array and returns the new length of the array.
+                A pull request is a feature of GitHub and other source code
+                management tools that allow a repository’s collaborators to
+                review and give feedback on proposed code changes before they
+                are accepted and merged to another branch, usually the main
+                branch. Each pull request creates a discussion forum that can be
+                used by reviewers and authors alike to highlight or add comments
+                to a single line of code or chunk of code, add videos or images,
+                etc. Going through the pull request process can increase group
+                knowledge, improve product quality, and develop professional
+                skills through group critique.
               </p>
-              <p>Example:</p>
-              <pre>
-                <code>
-                  {`const fruits = ["Apple", "Peach"];
-console.log(unshift("Banana")); returns 3
-console.log(fruits); returns ["Banana", "Apple", "Peach"]
-`}
-                </code>
-              </pre>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -621,28 +587,46 @@ console.log(fruits); returns ["Banana", "Apple", "Peach"]
             id="panel18bh-header"
           >
             <Typography sx={{ width: "33%", flexShrink: 0, color: "#fff" }}>
-              forEach( )
+              A GitHub README File
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ color: "#fff" }}>
               <p>
-                This method helps to loop over array by executing a provided
-                callback function for each element in an array.
+                Adding a README file to your GitHub repository is the best way
+                to introduce your project to others. Since it is usually the
+                first thing others see on your repository, it is the best place
+                to explain what your project does, why it’s useful, and how they
+                can get started with it.
               </p>
-              <p>Example:</p>
-              <pre>
-                <code>
-                  {`const arr = [1, 2, 3];
-arr.forEach(element => {
-console.log(element)
-});
-returns
-1
-2
-3`}
-                </code>
-              </pre>
+              <p>
+                Writing a Good README file A good README file in GitHub, at
+                minimum, contains the following elements:
+              </p>
+              <ul>
+                <li>Title</li>
+                <li>Description</li>
+                <li>Features</li>
+                <li>How to use</li>
+                <li>Technologies</li>
+                <li>Collaborators</li>
+                <li>License</li>
+              </ul>
+              <p>You can further level up your README file with markdown:</p>
+              <ul>
+                <li>
+                  Use headers and HTML to format your README and make it easier
+                  to read.
+                </li>
+                <li>
+                  The headers automatically generate a table of contents on
+                  GitHub!
+                </li>
+                <li>
+                  Use media, such as images and videos, to make your project
+                  look more appealing.
+                </li>
+              </ul>
             </Typography>
           </AccordionDetails>
         </Accordion>
