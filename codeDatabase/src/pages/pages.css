@@ -1,0 +1,59 @@
+/*
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #151320;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 800ms;
+  width: 100%;
+  margin: 1rem;
+}
+
+.content > div {
+  overflow: hidden;
+  padding: 0.2rem;
+
+  background-color: aqua;
+  border-radius: 4px;
+}
+
+.content:hover {
+  grid-template-rows: 1fr;
+}
+*/
+
+.background-container {
+  width: 100%;
+  height: 100%;
+  background-color: #151320;
+  display: flex;
+  justify-content: center;
+}
+
+.main-inner {
+  width: 60%;
+  background-color: #151320;
+  margin-top: 2rem;
+  margin-bottom: 30rem;
+}
+
+.AccordionSummary-root {
+  background-color: aqua;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Montserrat";
+  margin-bottom: 2rem;
+}
