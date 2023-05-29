@@ -1,7 +1,7 @@
 import "./pages.css";
 
 const CssTricks = () => {
-  return <div>cssTricks</div>;
+  return <></>;
 };
 
 export default CssTricks;
