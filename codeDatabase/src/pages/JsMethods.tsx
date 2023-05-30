@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { jsMethods, jsMath } from "./arrays/jsArray";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Nav from "../components/nav/Nav";
 
 import "./pages.css";
 
@@ -28,103 +28,99 @@ export default function JsMethods() {
   };
 
   return (
-    <div className="home-content">
-      <button className="button-home">
-        <Link to="/">Home</Link>
-      </button>
-      <div className="background-container">
-        <div className="main-inner">
-          <button onClick={toggleVisibilityArrays}>Arrays</button>
-          {!isHiddenArrays && (
-            <div>
-              {jsMethods.map((item) => (
-                <Accordion
-                  key={item.id}
-                  style={{
-                    backgroundColor: "#151320",
-                    border: "0.5px solid #0C9DC2",
-                    padding: "0.5rem 0",
-                  }}
-                  expanded={expanded === `panel${item.id}`}
-                  onChange={handleChange(`panel${item.id}`)}
+    <div className="background-container">
+      <Nav />
+      <div className="main-inner">
+        <button onClick={toggleVisibilityArrays}>Arrays</button>
+        {!isHiddenArrays && (
+          <div>
+            {jsMethods.map((item) => (
+              <Accordion
+                key={item.id}
+                style={{
+                  backgroundColor: "#151320",
+                  border: "0.5px solid #0C9DC2",
+                  padding: "0.5rem 0",
+                }}
+                expanded={expanded === `panel${item.id}`}
+                onChange={handleChange(`panel${item.id}`)}
+              >
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+                  aria-controls={`panel${item.id}bh-content`}
+                  id={`panel${item.id}bh-header`}
                 >
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
-                    aria-controls={`panel${item.id}bh-content`}
-                    id={`panel${item.id}bh-header`}
+                  <Typography
+                    sx={{
+                      width: "33%",
+                      flexShrink: 0,
+                      color: "#fff",
+                      fontSize: "20px",
+                    }}
                   >
-                    <Typography
-                      sx={{
-                        width: "33%",
-                        flexShrink: 0,
-                        color: "#fff",
-                        fontSize: "20px",
-                      }}
-                    >
-                      {item.title}
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography sx={{ color: "#fff" }}>
-                      <p>{item.description}</p>
-                      <p>Example:</p>
-                      <pre>
-                        <code>{item.example}</code>
-                      </pre>
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-              ))}
-            </div>
-          )}
-        </div>
+                    {item.title}
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography sx={{ color: "#fff" }}>
+                    <p>{item.description}</p>
+                    <p>Example:</p>
+                    <pre>
+                      <code>{item.example}</code>
+                    </pre>
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            ))}
+          </div>
+        )}
+      </div>
 
-        <div className="main-inner-last">
-          <button onClick={toggleVisibilityMath}>Math</button>
-          {!isHiddenMath && (
-            <div>
-              {jsMath.map((item) => (
-                <Accordion
-                  key={item.id}
-                  style={{
-                    backgroundColor: "#151320",
-                    border: "0.5px solid #0C9DC2",
-                    padding: "0.5rem 0",
-                    width: "1000px",
-                  }}
-                  expanded={expanded === `panel${item.id}`}
-                  onChange={handleChange(`panel${item.id}`)}
+      <div className="main-inner-last">
+        <button onClick={toggleVisibilityMath}>Math</button>
+        {!isHiddenMath && (
+          <div>
+            {jsMath.map((item) => (
+              <Accordion
+                key={item.id}
+                style={{
+                  backgroundColor: "#151320",
+                  border: "0.5px solid #0C9DC2",
+                  padding: "0.5rem 0",
+                  width: "1000px",
+                }}
+                expanded={expanded === `panel${item.id}`}
+                onChange={handleChange(`panel${item.id}`)}
+              >
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+                  aria-controls={`panel${item.id}bh-content`}
+                  id={`panel${item.id}bh-header`}
                 >
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
-                    aria-controls={`panel${item.id}bh-content`}
-                    id={`panel${item.id}bh-header`}
+                  <Typography
+                    sx={{
+                      width: "33%",
+                      flexShrink: 0,
+                      color: "#fff",
+                      fontSize: "20px",
+                    }}
                   >
-                    <Typography
-                      sx={{
-                        width: "33%",
-                        flexShrink: 0,
-                        color: "#fff",
-                        fontSize: "20px",
-                      }}
-                    >
-                      {item.title}
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography sx={{ color: "#fff" }}>
-                      <p>{item.description}</p>
-                      <p>Example:</p>
-                      <pre>
-                        <code>{item.example}</code>
-                      </pre>
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-              ))}
-            </div>
-          )}
-        </div>
+                    {item.title}
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography sx={{ color: "#fff" }}>
+                    <p>{item.description}</p>
+                    <p>Example:</p>
+                    <pre>
+                      <code>{item.example}</code>
+                    </pre>
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

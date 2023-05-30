@@ -9,7 +9,7 @@
 .main-inner {
   width: 100%;
   background-color: #151320;
-  margin-top: 6rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,8 +18,8 @@
 button {
   color: #fff;
   font-family: "Montserrat";
-  font-size: 2.5rem;
-  width: 150px;
+  font-size: 2rem;
+  padding: 0.5rem 0.5rem;
   background-color: #151320;
   border: 1px solid #0c9dc2;
   border-radius: 10px;
@@ -35,22 +35,29 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 32rem;
+  margin-bottom: 38rem;
 }
 
-.button-home {
+.home {
   color: #fff;
   font-family: "Montserrat";
-  font-size: 2.5rem;
-  width: 150px;
+  font-size: 1.5rem;
   background-color: #151320;
-  border: 1px solid #0c9dc2;
-  border-radius: 10px;
-  box-shadow: 0 0 8px #0c9dc2;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-left: 2rem;
 }
 
 .home-content {
   background-color: #151320;
+  margin-top: -3.5rem;
+}
+
+.git-main-inner {
+  width: 100%;
+  background-color: #151320;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45rem;
 }
